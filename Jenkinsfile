@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('build') {
 			steps {
-				sh 'echo Hello World v2.0'
+				sh 'echo Hello World v3.0'
 			}
 		}
 	}
