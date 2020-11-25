@@ -1,12 +1,13 @@
 pipeline {
 	agent {
-		docker { image 'node:14-alpine' }
+		docker { dockerfile true }
 	}
 	stages {
 		stage('Test') {
 			steps {
-				echo 'Hello from docker v3'
+				echo 'Hello from Dockerfile v1'
 				sh 'node --version'
+				sh 'svn --version'
 			}
 		}
 	}
