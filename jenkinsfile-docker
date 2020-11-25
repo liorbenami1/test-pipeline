@@ -5,7 +5,7 @@ pipeline {
 	stages {
 		stage('Test') {
 			steps {
-				echo 'Hello from docker v1'
+				echo 'Hello from docker v2'
 				sh 'node --version'
 			}
 		}
